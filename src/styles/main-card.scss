@@ -1,0 +1,101 @@
+@import "variables.scss";
+
+.main-card {
+  width: 270px;
+  height: 250px;
+  background-color: $Light-Grayish-Blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.4rem;
+
+  .user-container {
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+
+    img {
+      width: 22px;
+    }
+
+    .user-name {
+      font-size: 0.94rem;
+      font-weight: 700;
+      color: $Dark-Grayish-Blue;
+    }
+  }
+
+  .follow-container {
+    text-align: center;
+
+    .follow-number {
+      margin: 0;
+      font-size: 4rem;
+    }
+
+    .follow-text {
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.4rem;
+      color: $Dark-Grayish-Blue;
+      font-size: 0.9rem;
+    }
+  }
+
+  .follow-today-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+
+    img {
+      width: 10px;
+    }
+
+    .follow-today {
+      font-size: 0.94rem;
+      font-weight: 700;
+      color: $Lime-Green;
+    }
+  }
+}
+
+.main-card:nth-child(1) {
+  border-top: 6px solid $Facebook;
+}
+
+.main-card:nth-child(2) {
+  border-top: 6px solid $Twitter;
+}
+
+.main-card:nth-child(3) {
+  position: relative;
+  border-top: 6px solid transparent;
+  background-clip: padding-box;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.main-card:nth-child(3)::after {
+  position: absolute;
+  top: -6px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  content: "";
+  z-index: -1;
+  border-radius: 0.4rem;
+}
+
+.main-card:nth-child(4) {
+  border-top: 6px solid $YouTube;
+
+  .follow-today {
+    color: $Bright-Red;
+  }
+}

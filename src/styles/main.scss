@@ -1,20 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-
-$Lime-Green: hsl(163, 72%, 41%);
-$Bright-Red: hsl(356, 69%, 56%);
-$Facebook: hsl(208, 92%, 53%);
-$Twitter: hsl(203, 89%, 53%);
-$Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
-$YouTube: hsl(348, 97%, 39%);
+@import "variables.scss";
 
 body {
-  background: linear-gradient(to right, orange, black);
   font-family: "Inter", serif;
 }
 
 .App {
-  h1 {
-    text-align: center;
-    font-size: 2rem;
+  width: 85%;
+  margin: 0 auto;
+
+  header {
+    margin-top: 2rem;
+
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
   }
+}
+
+.main-cards-container {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }

@@ -19,6 +19,8 @@ function App() {
           {MainCards}
         </section>
 
+        <h2 className='subtitle'>Overview - Today</h2>
+
         <section className='secondary-cards-container'>
           {SecondaryCards}
         </section>

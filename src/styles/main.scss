@@ -17,22 +17,30 @@ body {
     }
 
     p {
+      color: $Dark-Grayish-Blue;
+      font-weight: 700;
       margin: 0;
     }
   }
 }
 
 .main-cards-container {
-  margin: 3rem 0;
-  display: flex;
-  justify-content: space-between;
+  margin: 3.2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
+  justify-items: center;
+}
+
+.subtitle {
+  color: $Dark-Grayish-Blue;
+  font-size: 1.6rem;
 }
 
 .secondary-cards-container {
-  margin: 3rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
+  justify-items: center;
 }

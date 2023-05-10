@@ -64,6 +64,11 @@
   }
 }
 
+.main-card:hover {
+  cursor: pointer;
+  background-color: $Hover;
+}
+
 .main-card:nth-child(1) {
   border-top: 6px solid $Facebook;
 }

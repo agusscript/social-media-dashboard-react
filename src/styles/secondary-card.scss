@@ -1,0 +1,72 @@
+@import "variables.scss";
+
+.secondary-card {
+  width: 270px;
+  height: 150px;
+  background-color: $Light-Grayish-Blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.4rem;
+
+  .header-container,
+  .number-card-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-container {
+    .title-card {
+      font-size: 0.94rem;
+      font-weight: 700;
+      color: $Dark-Grayish-Blue;
+    }
+
+    img {
+      width: 22px;
+    }
+  }
+
+  .number-card-container {
+    .number-card {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+
+      img {
+        width: 10px;
+      }
+
+      .percentage-card {
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: $Lime-Green;
+      }
+    }
+  }
+}
+
+.secondary-card:hover {
+  cursor: pointer;
+  background-color: $Hover;
+}
+
+.secondary-card:nth-child(2),
+.secondary-card:nth-child(7),
+.secondary-card:nth-child(8) {
+  div {
+    .percentage-card {
+      color: $Bright-Red;
+    }
+  }
+}

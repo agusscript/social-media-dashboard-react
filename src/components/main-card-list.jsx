@@ -1,4 +1,3 @@
-import MainCard from './main-card.jsx';
 import facebookImg from '../assets/icon-facebook.svg';
 import twitterImg from '../assets/icon-twitter.svg';
 import instagramImg from '../assets/icon-instagram.svg';
@@ -28,7 +27,7 @@ const mainCards = [
   {
     id: 3,
     userName: '@realnathanf',
-    followNumber: '11K',
+    followNumber: '11k',
     followText: 'followers',
     followToday: '1099 Today',
     image: instagramImg,
@@ -45,16 +44,4 @@ const mainCards = [
   }
 ];
 
-const MainCards = mainCards.map(card => {
-  return <MainCard
-    key={card.id}
-    userName={card.userName}
-    followNumber={card.followNumber}
-    followText={card.followText}
-    followToday={card.followToday}
-    image={card.image}
-    icon={card.icon}
-  />
-});
-
-export default MainCards;
+export default mainCards;

@@ -1,3 +1,4 @@
+import mainCards from './main-card-list';
 import '../styles/main-card.scss';
 
 function MainCard({ userName, followNumber, followText, followToday, image, icon }) {
@@ -19,4 +20,16 @@ function MainCard({ userName, followNumber, followText, followToday, image, icon
   )
 }
 
-export default MainCard;
+const MainCards = mainCards.map(card => {
+  return <MainCard
+    key={card.id}
+    userName={card.userName}
+    followNumber={card.followNumber}
+    followText={card.followText}
+    followToday={card.followToday}
+    image={card.image}
+    icon={card.icon}
+  />
+});
+
+export default MainCards;

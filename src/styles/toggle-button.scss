@@ -47,4 +47,12 @@
   .toggle-active {
     background-image: $Toggle-Button;
   }
+
+  @media (max-width: 675px) {
+    padding-top: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid $Desaturated-Blue;
+  }
 }

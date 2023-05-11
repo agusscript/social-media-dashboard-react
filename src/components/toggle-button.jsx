@@ -18,12 +18,14 @@ const toggleTheme = () => {
   toggleSingleElementColor('.inner-toggle-button', 'inner-active');
   toggleSingleElementColor('.overview-title', 'white');
 
-  togglElementsColor('.main-card', 'card-dark-active');
+  togglElementsColor('.main-card', 'dark-desaturated-blue');
+  togglElementsColor('.main-card', 'main-card-dark');
   togglElementsColor('.user-name', 'desatured-blue');
   togglElementsColor('.follow-number', 'white');
   togglElementsColor('.follow-text', 'desatured-blue');
 
-  togglElementsColor('.secondary-card', 'card-dark-active');
+  togglElementsColor('.secondary-card', 'dark-desaturated-blue');
+  togglElementsColor('.secondary-card', 'secondary-card-dark');
   togglElementsColor('.title-card', 'desatured-blue');
   togglElementsColor('.number-card', 'white');
 }

@@ -65,13 +65,17 @@
   }
 }
 
-.card-dark-active {
+.dark-desaturated-blue {
   background-color: $Dark-Desaturated-Blue;
 }
 
 .secondary-card:hover {
   cursor: pointer;
   background-color: $Hover;
+}
+
+.secondary-card-dark:hover {
+  background-color: $Hover-Dark;
 }
 
 .secondary-card:nth-child(2),

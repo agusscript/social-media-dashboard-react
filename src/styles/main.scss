@@ -16,6 +16,7 @@ body {
     margin-top: 2rem;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     div {
@@ -33,6 +34,7 @@ body {
         color: $Dark-Grayish-Blue;
         font-weight: 700;
         margin: 0;
+        padding-top: 0.3rem;
       }
 
       .desatured-blue {

@@ -17,7 +17,6 @@ function SecondaryCard({ title, number, percentage, image, icon }) {
           <img src={icon} alt={`${icon} image`} />
           <p className='percentage-card'>{percentage}</p>
         </div>
-
       </div>
 
     </div>

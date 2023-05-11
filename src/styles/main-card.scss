@@ -27,6 +27,10 @@
       font-weight: 700;
       color: $Dark-Grayish-Blue;
     }
+
+    .desatured-blue {
+      color: $Desaturated-Blue;
+    }
   }
 
   .follow-container {
@@ -35,6 +39,7 @@
     .follow-number {
       margin: 0;
       font-size: 4rem;
+      color: $Very-Dark-Blue;
     }
 
     .follow-text {
@@ -43,6 +48,14 @@
       letter-spacing: 0.4rem;
       color: $Dark-Grayish-Blue;
       font-size: 0.9rem;
+    }
+
+    .desatured-blue {
+      color: $Desaturated-Blue;
+    }
+
+    .white {
+      color: $White;
     }
   }
 
@@ -62,6 +75,10 @@
       color: $Lime-Green;
     }
   }
+}
+
+.card-dark-active {
+  background-color: $Dark-Desaturated-Blue;
 }
 
 .main-card:hover {
@@ -91,7 +108,7 @@
   bottom: 0px;
   left: 0px;
   right: 0px;
-  background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  background: $Instagram;
   content: "";
   z-index: -1;
   border-radius: 0.4rem;

@@ -3,7 +3,7 @@ import '../styles/main-card.scss';
 
 function MainCard({ userName, followNumber, followText, followToday, image, icon }) {
   return (
-    <div className='main-card' >
+    <div className='main-card'>
       <div className='user-container'>
         <img src={image} alt={`${image} icon`} />
         <p className='user-name'>{userName}</p>

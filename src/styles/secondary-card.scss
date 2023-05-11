@@ -26,6 +26,10 @@
       color: $Dark-Grayish-Blue;
     }
 
+    .desatured-blue {
+      color: $Desaturated-Blue;
+    }
+
     img {
       width: 22px;
     }
@@ -36,6 +40,11 @@
       margin: 0;
       font-size: 2rem;
       font-weight: 700;
+      color: $Very-Dark-Blue;
+    }
+
+    .white {
+      color: $White;
     }
 
     div {
@@ -54,6 +63,10 @@
       }
     }
   }
+}
+
+.card-dark-active {
+  background-color: $Dark-Desaturated-Blue;
 }
 
 .secondary-card:hover {

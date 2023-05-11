@@ -1,0 +1,50 @@
+@import "variables.scss";
+
+.toggle-btn-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .toggle-text {
+    color: $Toggle;
+    font-weight: 700;
+  }
+
+  .toggle-button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 70px;
+    height: 34px;
+    background-color: $Toggle;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    transition: all 0.3s;
+
+    .inner-toggle-button {
+      margin: 0.3rem;
+      width: 28px;
+      height: 80%;
+      background-color: $White;
+      border-radius: 50%;
+      transition: all 0.3s;
+    }
+
+    .inner-active {
+      background-color: $Dark-Desaturated-Blue;
+      -ms-transform: translateX(-115%);
+      -webkit-transform: translateX(-115%);
+      transform: translateX(-115%);
+    }
+  }
+
+  .toggle-button:hover {
+    cursor: pointer;
+  }
+
+  .toggle-active {
+    background-image: $Toggle-Button;
+  }
+}

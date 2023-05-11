@@ -4,22 +4,40 @@ body {
   font-family: "Inter", serif;
 }
 
+.very-dark-blue {
+  background-color: $Very-Dark-Blue;
+}
+
 .App {
   width: 85%;
   margin: 0 auto;
 
   header {
     margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    h1 {
-      font-size: 2rem;
-      margin: 0;
-    }
+    div {
+      .header-title {
+        font-size: 2rem;
+        margin: 0;
+        color: $Very-Dark-Blue;
+      }
 
-    p {
-      color: $Dark-Grayish-Blue;
-      font-weight: 700;
-      margin: 0;
+      .white {
+        color: $White;
+      }
+
+      .header-subtitle {
+        color: $Dark-Grayish-Blue;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      .desatured-blue {
+        color: $Desaturated-Blue;
+      }
     }
   }
 }
@@ -32,9 +50,13 @@ body {
   justify-items: center;
 }
 
-.subtitle {
+.overview-title {
   color: $Dark-Grayish-Blue;
   font-size: 1.6rem;
+}
+
+.white {
+  color: $White;
 }
 
 .secondary-cards-container {

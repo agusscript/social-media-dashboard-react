@@ -9,38 +9,38 @@ const mainCards = [
   {
     id: 1,
     userName: '@nathanf',
-    followNumber: '1987',
     followText: 'followers',
     followToday: '12 Today',
     image: facebookImg,
-    icon: iconUp
+    icon: iconUp,
+    target: 1987
   },
   {
     id: 2,
     userName: '@nathanf',
-    followNumber: '1044',
     followText: 'followers',
     followToday: '99 Today',
     image: twitterImg,
-    icon: iconUp
+    icon: iconUp,
+    target: 1044
   },
   {
     id: 3,
     userName: '@realnathanf',
-    followNumber: '11k',
     followText: 'followers',
     followToday: '1099 Today',
     image: instagramImg,
-    icon: iconUp
+    icon: iconUp,
+    target: 11 + "k"
   },
   {
     id: 4,
     userName: 'Nathan F.',
-    followNumber: '8239',
     followText: 'subscribers',
     followToday: '144 Today',
     image: youtubeImg,
-    icon: iconDown
+    icon: iconDown,
+    target: 8239
   }
 ];
 

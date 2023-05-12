@@ -4,6 +4,25 @@ import ToggleButton from './components/toggle-button.jsx';
 import './styles/main.scss';
 
 function App() {
+  const counters = document.querySelectorAll('.number');
+  const speed = 3000;
+
+  counters.forEach(counter => {
+    const animate = () => {
+      const value = +counter.getAttribute('target');
+      const data = +counter.innerText;
+
+      const time = value / speed;
+      if (data < value) {
+        counter.innerText = Math.ceil(data + time);
+        setTimeout(animate, 1);
+      } else {
+        counter.innerText = value;
+      }
+    }
+    animate();
+  });
+
   return (
     <div className='App'>
       <header>

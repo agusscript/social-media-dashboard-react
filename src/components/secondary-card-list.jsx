@@ -9,66 +9,66 @@ const secondaryCards = [
   {
     id: 1,
     title: 'Page Views',
-    number: '87',
     percentage: '3%',
     image: facebookImg,
-    icon: iconUp
+    icon: iconUp,
+    target: 87
   },
   {
     id: 2,
     title: 'Likes',
-    number: '52',
     percentage: '2%',
     image: facebookImg,
-    icon: iconDown
+    icon: iconDown,
+    target: 52
   },
   {
     id: 3,
     title: 'Likes',
-    number: '5462',
     percentage: '2257%',
     image: instagramImg,
-    icon: iconUp
+    icon: iconUp,
+    target: 5462
   },
   {
     id: 4,
     title: 'Profile Views',
-    number: '52k',
     percentage: '2257%',
     image: instagramImg,
-    icon: iconUp
+    icon: iconUp,
+    target: 52 + "k"
   },
   {
     id: 5,
     title: 'Retweets',
-    number: '117',
     percentage: '303%',
     image: twitterImg,
-    icon: iconUp
+    icon: iconUp,
+    target: 117
   },
   {
     id: 6,
     title: 'Likes',
-    number: '507',
     percentage: '553%',
     image: twitterImg,
-    icon: iconUp
+    icon: iconUp,
+    target: 507
   },
   {
     id: 7,
     title: 'Likes',
-    number: '107',
     percentage: '19%',
     image: youtubeImg,
-    icon: iconDown
+    icon: iconDown,
+    target: 107
   },
   {
     id: 8,
     title: 'Total Views',
-    number: '1407',
     percentage: '12%',
     image: youtubeImg,
-    icon: iconDown
+    icon: iconDown,
+    target: 1407
   },
 ];
 

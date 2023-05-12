@@ -1,7 +1,7 @@
 import secondaryCards from './secondary-card-list';
 import '../styles/secondary-card.scss';
 
-function SecondaryCard({ title, number, percentage, image, icon }) {
+function SecondaryCard({ title, percentage, image, icon, target }) {
   return (
     <div className='secondary-card' >
 
@@ -11,7 +11,7 @@ function SecondaryCard({ title, number, percentage, image, icon }) {
       </div>
 
       <div className='number-card-container'>
-        <p className='number-card'>{number}</p>
+        <p className='number number-card' target={target}>0</p>
 
         <div>
           <img src={icon} alt={`${icon} image`} />
@@ -27,10 +27,10 @@ const SecondaryCards = secondaryCards.map(card => {
   return <SecondaryCard
     key={card.id}
     title={card.title}
-    number={card.number}
     percentage={card.percentage}
     image={card.image}
     icon={card.icon}
+    target={card.target}
   />
 });
 

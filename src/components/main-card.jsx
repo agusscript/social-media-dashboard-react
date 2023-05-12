@@ -1,7 +1,7 @@
 import mainCards from './main-card-list';
 import '../styles/main-card.scss';
 
-function MainCard({ userName, followNumber, followText, followToday, image, icon }) {
+function MainCard({ userName, followText, followToday, image, icon, target }) {
   return (
     <div className='main-card'>
       <div className='user-container'>
@@ -9,7 +9,7 @@ function MainCard({ userName, followNumber, followText, followToday, image, icon
         <p className='user-name'>{userName}</p>
       </div>
       <div className='follow-container'>
-        <h2 className='follow-number'>{followNumber}</h2>
+        <h2 className='number follow-number' target={target}>0</h2>
         <p className='follow-text'>{followText}</p>
       </div>
       <div className='follow-today-container'>
@@ -24,11 +24,11 @@ const MainCards = mainCards.map(card => {
   return <MainCard
     key={card.id}
     userName={card.userName}
-    followNumber={card.followNumber}
     followText={card.followText}
     followToday={card.followToday}
     image={card.image}
     icon={card.icon}
+    target={card.target}
   />
 });
 

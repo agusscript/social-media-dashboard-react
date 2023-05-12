@@ -31,7 +31,8 @@ const mainCards = [
     followToday: '1099 Today',
     image: instagramImg,
     icon: iconUp,
-    target: 11 + "k"
+    target: 11,
+    letter: "k"
   },
   {
     id: 4,

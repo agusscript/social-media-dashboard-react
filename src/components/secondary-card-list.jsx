@@ -36,7 +36,8 @@ const secondaryCards = [
     percentage: '2257%',
     image: instagramImg,
     icon: iconUp,
-    target: 52 + "k"
+    target: 52,
+    letter: "k"
   },
   {
     id: 5,

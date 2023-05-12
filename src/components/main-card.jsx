@@ -1,7 +1,8 @@
 import mainCards from './main-card-list';
 import '../styles/main-card.scss';
+import CountUp from 'react-countup';
 
-function MainCard({ userName, followText, followToday, image, icon, target }) {
+function MainCard({ userName, followText, followToday, image, icon, target, letter }) {
   return (
     <div className='main-card'>
       <div className='user-container'>
@@ -9,7 +10,9 @@ function MainCard({ userName, followText, followToday, image, icon, target }) {
         <p className='user-name'>{userName}</p>
       </div>
       <div className='follow-container'>
-        <h2 className='number follow-number' target={target}>0</h2>
+        <h2 className='number follow-number' target={target}>
+          <CountUp end={target} separator="" duration={3} suffix={letter} />
+        </h2>
         <p className='follow-text'>{followText}</p>
       </div>
       <div className='follow-today-container'>
@@ -29,6 +32,7 @@ const MainCards = mainCards.map(card => {
     image={card.image}
     icon={card.icon}
     target={card.target}
+    letter={card.letter}
   />
 });
 

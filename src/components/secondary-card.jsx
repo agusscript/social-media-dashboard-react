@@ -1,7 +1,8 @@
 import secondaryCards from './secondary-card-list';
 import '../styles/secondary-card.scss';
+import CountUp from 'react-countup';
 
-function SecondaryCard({ title, percentage, image, icon, target }) {
+function SecondaryCard({ title, percentage, image, icon, target, letter }) {
   return (
     <div className='secondary-card' >
 
@@ -11,7 +12,9 @@ function SecondaryCard({ title, percentage, image, icon, target }) {
       </div>
 
       <div className='number-card-container'>
-        <p className='number number-card' target={target}>0</p>
+        <p className='number number-card' target={target}>
+          <CountUp end={target} separator="" duration={3} suffix={letter} />
+        </p>
 
         <div>
           <img src={icon} alt={`${icon} image`} />
@@ -31,6 +34,7 @@ const SecondaryCards = secondaryCards.map(card => {
     image={card.image}
     icon={card.icon}
     target={card.target}
+    letter={card.letter}
   />
 });
 

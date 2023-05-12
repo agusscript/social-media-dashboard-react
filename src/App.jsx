@@ -25,6 +25,11 @@ function App() {
           {SecondaryCards}
         </section>
       </main>
+      <footer>
+        <p className='footer-text'>
+          Coded by <a href='https://github.com/agusscript' className='footer-link' target='_blank'>Agustin Sanchez</a>
+        </p>
+      </footer>
     </div>
   )
 }

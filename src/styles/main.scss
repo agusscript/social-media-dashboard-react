@@ -68,3 +68,21 @@ body {
   gap: 1rem;
   justify-items: center;
 }
+
+footer {
+  margin: 3rem 0 0;
+  text-align: center;
+  letter-spacing: 0.05rem;
+
+  p {
+    font-weight: 700;
+
+    a {
+      color: $YouTube;
+    }
+
+    .lime-green {
+      color: $Lime-Green;
+    }
+  }
+}

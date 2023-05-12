@@ -17,6 +17,8 @@ const toggleTheme = () => {
   toggleSingleElementColor('.toggle-button', 'toggle-active');
   toggleSingleElementColor('.inner-toggle-button', 'inner-active');
   toggleSingleElementColor('.overview-title', 'white');
+  toggleSingleElementColor('.footer-text', 'white');
+  toggleSingleElementColor('.footer-link', 'lime-green');
 
   togglElementsColor('.main-card', 'dark-desaturated-blue');
   togglElementsColor('.main-card', 'main-card-dark');

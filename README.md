@@ -1,4 +1,4 @@
-# Frontend Mentor - Social media dashboard with theme switcher solution
+# Social media dashboard with theme switcher solution
 
 ![](src/assets/screenshots/desktop-preview.jpg)
 
@@ -63,7 +63,6 @@ Users should be able to:
  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
   <img src="https://img.shields.io/badge/-JavaScript-yellow?style=flat-square&logo=Javascript&logoColor=white" height="30" alt="JavaScript"/>
  </a>
-</p>
  <a href="https://img.shields.io/badge/-React-cyan?style=flat-square&logo=react&logoColor=black">
   <img src="https://react.dev/blog/2023/03/16/introducing-react-dev" height="30" alt="React"/>
  </a>

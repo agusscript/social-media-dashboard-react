@@ -11,7 +11,7 @@ function MainCard({ userName, followText, followToday, image, icon, target, lett
       </div>
       <div className='follow-container'>
         <h2 className='number follow-number' target={target}>
-          <CountUp end={target} separator="" duration={3} suffix={letter} />
+          <CountUp end={target} separator="" duration={4} suffix={letter} />
         </h2>
         <p className='follow-text'>{followText}</p>
       </div>

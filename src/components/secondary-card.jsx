@@ -13,7 +13,7 @@ function SecondaryCard({ title, percentage, image, icon, target, letter }) {
 
       <div className='number-card-container'>
         <p className='number number-card' target={target}>
-          <CountUp end={target} separator="" duration={3} suffix={letter} />
+          <CountUp end={target} separator="" duration={4} suffix={letter} />
         </p>
 
         <div>

@@ -34,8 +34,8 @@ const toggleTheme = () => {
 
 function ToggleButton() {
   return (
-    <button className='toggle-button' onClick={toggleTheme}>
-      <div className='inner-toggle-button'></div>
+    <button className='toggle-button' aria-label='active dark theme' onClick={toggleTheme}>
+      <div className='inner-toggle-button' ></div>
     </button>
   )
 }

@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+body {
+  font-family: "Inter", serif;
+}
+
+.very-dark-blue {
+  background-color: hsl(230, 17%, 14%);
+}
+
+.App {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.main-cards-container {
+  margin: 3.2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.overview-title {
+  color: hsl(228, 12%, 44%);
+  font-size: 1.6rem;
+}
+
+.white {
+  color: hsl(0, 0%, 100%);
+}
+
+.secondary-cards-container {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}

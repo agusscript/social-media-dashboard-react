@@ -1,5 +1,5 @@
-import secondaryCards from './secondary-card-list';
-import '../styles/secondary-card.scss';
+import "./SecondaryCard.scss";
+import SecondaryCardsInfo from "./SecondaryCardsInfo";
 import CountUp from 'react-countup';
 
 function SecondaryCard({ title, percentage, image, icon, target, letter }) {
@@ -26,7 +26,7 @@ function SecondaryCard({ title, percentage, image, icon, target, letter }) {
   )
 }
 
-const SecondaryCards = secondaryCards.map(card => {
+const SecondaryCards = SecondaryCardsInfo.map(card => {
   return <SecondaryCard
     key={card.id}
     title={card.title}

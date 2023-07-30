@@ -1,9 +1,7 @@
-@import "variables.scss";
-
 .secondary-card {
   width: 270px;
   height: 150px;
-  background-color: $Light-Grayish-Blue;
+  background-color: hsl(227, 47%, 96%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,11 +21,11 @@
     .title-card {
       font-size: 0.94rem;
       font-weight: 700;
-      color: $Dark-Grayish-Blue;
+      color: hsl(228, 12%, 44%);
     }
 
     .desatured-blue {
-      color: $Desaturated-Blue;
+      color: hsl(228, 34%, 66%);
     }
 
     img {
@@ -40,11 +38,11 @@
       margin: 0;
       font-size: 2rem;
       font-weight: 700;
-      color: $Very-Dark-Blue;
+      color: hsl(230, 17%, 14%);
     }
 
     .white {
-      color: $White;
+      color: hsl(0, 0%, 100%);
     }
 
     div {
@@ -59,23 +57,23 @@
       .percentage-card {
         font-size: 0.8rem;
         font-weight: 700;
-        color: $Lime-Green;
+        color: hsl(163, 72%, 41%);
       }
     }
   }
 }
 
 .dark-desaturated-blue {
-  background-color: $Dark-Desaturated-Blue;
+  background-color: hsl(228, 28%, 20%);
 }
 
 .secondary-card:hover {
   cursor: pointer;
-  background-color: $Hover;
+  background-color: hsl(230, 23%, 90%);
 }
 
 .secondary-card-dark:hover {
-  background-color: $Hover-Dark;
+  background-color: hsl(228, 22%, 28%);
 }
 
 .secondary-card:nth-child(2),
@@ -83,7 +81,7 @@
 .secondary-card:nth-child(8) {
   div {
     .percentage-card {
-      color: $Bright-Red;
+      color: hsl(356, 69%, 56%);
     }
   }
 }

@@ -1,9 +1,7 @@
-@import "variables.scss";
-
 .main-card {
   width: 270px;
   height: 250px;
-  background-color: $Light-Grayish-Blue;
+  background-color: hsl(227, 47%, 96%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,11 +23,11 @@
     .user-name {
       font-size: 0.94rem;
       font-weight: 700;
-      color: $Dark-Grayish-Blue;
+      color: hsl(228, 12%, 44%);
     }
 
     .desatured-blue {
-      color: $Desaturated-Blue;
+      color: hsl(228, 34%, 66%);
     }
   }
 
@@ -39,23 +37,23 @@
     .follow-number {
       margin: 0;
       font-size: 4rem;
-      color: $Very-Dark-Blue;
+      color: hsl(230, 17%, 14%);
     }
 
     .follow-text {
       margin: 0;
       text-transform: uppercase;
       letter-spacing: 0.4rem;
-      color: $Dark-Grayish-Blue;
+      color: hsl(228, 12%, 44%);
       font-size: 0.9rem;
     }
 
     .desatured-blue {
-      color: $Desaturated-Blue;
+      color: hsl(228, 34%, 66%);
     }
 
     .white {
-      color: $White;
+      color: hsl(0, 0%, 100%);
     }
   }
 
@@ -72,30 +70,30 @@
     .follow-today {
       font-size: 0.94rem;
       font-weight: 700;
-      color: $Lime-Green;
+      color: hsl(163, 72%, 41%);
     }
   }
 }
 
 .dark-desaturated-blue {
-  background-color: $Dark-Desaturated-Blue;
+  background-color: hsl(228, 28%, 20%);
 }
 
 .main-card:hover {
   cursor: pointer;
-  background-color: $Hover;
+  background-color: hsl(230, 23%, 90%);
 }
 
 .main-card-dark:hover {
-  background-color: $Hover-Dark;
+  background-color: hsl(228, 22%, 28%);
 }
 
 .main-card:nth-child(1) {
-  border-top: 6px solid $Facebook;
+  border-top: 6px solid hsl(208, 92%, 53%);
 }
 
 .main-card:nth-child(2) {
-  border-top: 6px solid $Twitter;
+  border-top: 6px solid hsl(203, 89%, 53%);
 }
 
 .main-card:nth-child(3) {
@@ -112,16 +110,16 @@
   bottom: 0px;
   left: 0px;
   right: 0px;
-  background: $Instagram;
+  background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   content: "";
   z-index: -1;
   border-radius: 0.4rem;
 }
 
 .main-card:nth-child(4) {
-  border-top: 6px solid $YouTube;
+  border-top: 6px solid hsl(348, 97%, 39%);
 
   .follow-today {
-    color: $Bright-Red;
+    color: hsl(356, 69%, 56%);
   }
 }

@@ -1,5 +1,5 @@
-import mainCards from './main-card-list';
-import '../styles/main-card.scss';
+import "./MainCard.scss";
+import mainCardsInfo from "./MainCardsInfo";
 import CountUp from 'react-countup';
 
 function MainCard({ userName, followText, followToday, image, icon, target, letter }) {
@@ -23,7 +23,7 @@ function MainCard({ userName, followText, followToday, image, icon, target, lett
   )
 }
 
-const MainCards = mainCards.map(card => {
+const MainCards = mainCardsInfo.map(card => {
   return <MainCard
     key={card.id}
     userName={card.userName}

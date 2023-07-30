@@ -1,0 +1,30 @@
+header {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  div {
+    .header-title {
+      font-size: 2rem;
+      margin: 0;
+      color: hsl(230, 17%, 14%);
+    }
+
+    .white {
+      color: hsl(0, 0%, 100%);
+    }
+
+    .header-subtitle {
+      color: hsl(228, 12%, 44%);
+      font-weight: 700;
+      margin: 0;
+      padding-top: 0.3rem;
+    }
+
+    .desatured-blue {
+      color: hsl(228, 34%, 66%);
+    }
+  }
+}

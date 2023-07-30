@@ -1,9 +1,9 @@
-import facebookImg from '../assets/icon-facebook.svg';
-import twitterImg from '../assets/icon-twitter.svg';
-import instagramImg from '../assets/icon-instagram.svg';
-import youtubeImg from '../assets/icon-youtube.svg';
-import iconUp from '../assets/icon-up.svg';
-import iconDown from '../assets/icon-down.svg';
+import facebookImg from "../../../assets/icon-facebook.svg";
+import twitterImg from "../../../assets/icon-twitter.svg";
+import instagramImg from "../../../assets/icon-instagram.svg";
+import youtubeImg from "../../../assets/icon-youtube.svg";
+import iconUp from "../../../assets/icon-up.svg";
+import iconDown from "../../../assets/icon-down.svg";
 
 const mainCards = [
   {

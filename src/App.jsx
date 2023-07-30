@@ -1,37 +1,16 @@
-import MainCards from './components/main-card.jsx';
-import SecondaryCards from './components/secondary-card.jsx';
-import ToggleButton from './components/toggle-button.jsx';
-import './styles/main.scss';
+import "./App.scss";
+import Header from "./components/Header/Header.jsx";
+import Main from "./components/Main/Main.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   return (
-    <div className='App'>
-      <header>
-        <div>
-          <h1 className='header-title'>Social Media Dashboard</h1>
-          <p className='header-subtitle'>Total followers: 23,004</p>
-        </div>
-        <div className='toggle-btn-container'>
-          <p className='toggle-text' >Dark Mode</p>
-          <ToggleButton />
-        </div>
-      </header>
-      <main>
-        <section className='main-cards-container'>
-          {MainCards}
-        </section>
-        <h2 className='overview-title'>Overview - Today</h2>
-        <section className='secondary-cards-container'>
-          {SecondaryCards}
-        </section>
-      </main>
-      <footer>
-        <p className='footer-text'>
-          Coded by <a href='https://github.com/agusscript' className='footer-link' target='_blank'>Agustin Sanchez</a>
-        </p>
-      </footer>
+    <div className="App">
+      <Header />
+      <Main />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

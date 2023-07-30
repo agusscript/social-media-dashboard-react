@@ -1,4 +1,4 @@
-import '../styles/toggle-button.scss';
+import "./ToggleButton.scss";
 
 function togglElementsColor(elements, color) {
   document.querySelectorAll(elements).forEach((e) => {

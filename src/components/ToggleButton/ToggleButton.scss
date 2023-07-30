@@ -1,12 +1,10 @@
-@import "variables.scss";
-
 .toggle-btn-container {
   display: flex;
   align-items: center;
   gap: 1rem;
 
   .toggle-text {
-    color: $Toggle;
+    color: hsl(230, 22%, 74%);
     font-weight: 700;
   }
 
@@ -16,7 +14,7 @@
     margin: 0;
     width: 70px;
     height: 34px;
-    background-color: $Toggle;
+    background-color: hsl(230, 22%, 74%);
     border-radius: 2rem;
     display: flex;
     align-items: center;
@@ -27,13 +25,13 @@
       margin: 0.3rem;
       width: 28px;
       height: 80%;
-      background-color: $White;
+      background-color: hsl(0, 0%, 100%);
       border-radius: 50%;
       transition: all 0.3s;
     }
 
     .inner-active {
-      background-color: $Dark-Desaturated-Blue;
+      background-color: hsl(228, 28%, 20%);
       -ms-transform: translateX(-115%);
       -webkit-transform: translateX(-115%);
       transform: translateX(-115%);
@@ -45,7 +43,7 @@
   }
 
   .toggle-active {
-    background-image: $Toggle-Button;
+    background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
   }
 
   @media (max-width: 675px) {
@@ -53,6 +51,6 @@
     margin-top: 2rem;
     width: 100%;
     justify-content: space-between;
-    border-top: 1px solid $Desaturated-Blue;
+    border-top: 1px solid hsl(228, 34%, 66%);
   }
 }

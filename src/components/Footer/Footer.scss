@@ -1,0 +1,17 @@
+footer {
+  margin: 3rem 0 0;
+  text-align: center;
+  letter-spacing: 0.05rem;
+
+  .text-container {
+    font-weight: 700;
+
+    a {
+      color: hsl(348, 97%, 39%);
+
+      &.lime-green {
+        color: hsl(163, 72%, 41%);
+      }
+    }
+  }
+}

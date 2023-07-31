@@ -1,11 +1,11 @@
 import "./Main.scss";
 import MainCard from "../MainCard/MainCard";
-import mainCardsInfo from "../MainCard/mainCardsInfo";
+import cardsInfo from "../MainCard/cardsInfo";
 import SecondaryCard from "../SecondaryCard/SecondaryCard";
 import secondaryCardsInfo from "../SecondaryCard/secondaryCardsInfo";
 
 function Main({ theme }) {
-  const MainCards = mainCardsInfo.map((card) => {
+  const MainCards = cardsInfo.map((card) => {
     return (
       <MainCard
         key={card.id}

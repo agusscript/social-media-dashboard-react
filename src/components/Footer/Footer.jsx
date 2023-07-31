@@ -1,11 +1,15 @@
 import "./Footer.scss";
 
-function Footer() {
+function Footer({ theme }) {
   return (
     <footer>
-      <div className="text-container">
+      <div className={`text-container ${theme ? "white" : ""}`}>
         <span>Coded by </span>
-        <a href="https://github.com/agusscript" className="footer-link" target="_blank">
+        <a
+          href="https://github.com/agusscript"
+          className={`footer-link ${theme ? "lime-green" : ""}`}
+          target="_blank"
+        >
           Agustin Sanchez
         </a>
       </div>

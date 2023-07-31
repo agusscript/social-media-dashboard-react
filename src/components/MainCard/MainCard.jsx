@@ -1,19 +1,18 @@
 import "./MainCard.scss";
-import mainCardsInfo from "./MainCardsInfo";
 import CountUp from 'react-countup';
 
-function MainCard({ userName, followText, followToday, image, icon, target, letter }) {
+function MainCard({ userName, followText, followToday, image, icon, target, letter, theme }) {
   return (
-    <div className='main-card'>
+    <div className={`main-card ${theme? "dark-desaturated-blue dark" : ""}`}>
       <div className='user-container'>
         <img src={image} alt={`${image} icon`} />
-        <p className='user-name'>{userName}</p>
+        <p className={`user-name ${theme? "desatured-blue" : ""}`}>{userName}</p>
       </div>
       <div className='follow-container'>
-        <h2 className='number follow-number' target={target}>
+        <h2 className={`number follow-number ${theme? "white" : ""}`} target={target}>
           <CountUp end={target} separator="" duration={4} suffix={letter} />
         </h2>
-        <p className='follow-text'>{followText}</p>
+        <p className={`follow-text ${theme? "desatured-blue" : ""}`}>{followText}</p>
       </div>
       <div className='follow-today-container'>
         <img src={icon} alt={`${icon} image`} />
@@ -23,17 +22,4 @@ function MainCard({ userName, followText, followToday, image, icon, target, lett
   )
 }
 
-const MainCards = mainCardsInfo.map(card => {
-  return <MainCard
-    key={card.id}
-    userName={card.userName}
-    followText={card.followText}
-    followToday={card.followToday}
-    image={card.image}
-    icon={card.icon}
-    target={card.target}
-    letter={card.letter}
-  />
-});
-
-export default MainCards;
+export default MainCard;

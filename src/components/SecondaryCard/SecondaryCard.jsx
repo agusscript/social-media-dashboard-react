@@ -1,18 +1,17 @@
 import "./SecondaryCard.scss";
-import SecondaryCardsInfo from "./SecondaryCardsInfo";
 import CountUp from 'react-countup';
 
-function SecondaryCard({ title, percentage, image, icon, target, letter }) {
+function SecondaryCard({ title, percentage, image, icon, target, letter, theme }) {
   return (
-    <div className='secondary-card' >
+    <div className={`secondary-card ${theme? "dark-desaturated-blue dark" : ""}`} >
 
       <div className='header-container'>
-        <p className='title-card'>{title}</p>
+        <p className={`title-card ${theme? "desatured-blue" : ""}`}>{title}</p>
         <img src={image} alt={`${image} icon`} />
       </div>
 
       <div className='number-card-container'>
-        <p className='number number-card' target={target}>
+        <p className={`number number-card ${theme? "white" : ""}`} target={target}>
           <CountUp end={target} separator="" duration={4} suffix={letter} />
         </p>
 
@@ -26,16 +25,4 @@ function SecondaryCard({ title, percentage, image, icon, target, letter }) {
   )
 }
 
-const SecondaryCards = SecondaryCardsInfo.map(card => {
-  return <SecondaryCard
-    key={card.id}
-    title={card.title}
-    percentage={card.percentage}
-    image={card.image}
-    icon={card.icon}
-    target={card.target}
-    letter={card.letter}
-  />
-});
-
-export default SecondaryCards;
+export default SecondaryCard;

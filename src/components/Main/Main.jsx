@@ -2,7 +2,7 @@ import "./Main.scss";
 import MainCard from "../MainCard/MainCard";
 import cardsInfo from "../MainCard/cardsInfo";
 import SecondaryCard from "../SecondaryCard/SecondaryCard";
-import secondaryCardsInfo from "../SecondaryCard/secondaryCardsInfo";
+import cardsInfoSec from "../SecondaryCard/cardsInfoSec";
 
 function Main({ theme }) {
   const MainCards = cardsInfo.map((card) => {
@@ -21,7 +21,7 @@ function Main({ theme }) {
     );
   });
 
-  const SecondaryCards = secondaryCardsInfo.map((card) => {
+  const SecondaryCards = cardsInfoSec.map((card) => {
     return (
       <SecondaryCard
         key={card.id}
